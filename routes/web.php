@@ -14,3 +14,14 @@
 Route::get('/', 'PageController@home');
 Route::get('/about', 'PageController@about');
 Route::get('/mahasiswa', 'MahasiswaController@index');
+
+// Students
+// Route::get('/students', 'StudentsController@index');
+// Route::get('/students/create', 'StudentsController@create');
+// Route::get('/students/{student}', 'StudentsController@show');
+// Route::post('/students', 'StudentsController@store');
+// Route::delete('/students/{student}', 'StudentsController@destroy');
+// Route::get('/students/{student}/edit', 'StudentsController@edit');
+// route::patch('/students/{student}', 'StudentsController@update');
+
+route::resource('students', 'StudentsController');
